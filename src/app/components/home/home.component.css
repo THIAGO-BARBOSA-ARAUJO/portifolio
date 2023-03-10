@@ -1,12 +1,61 @@
 .container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    min-height: 100vh;
-    gap: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 100vh;
+  gap: 50px;
+  padding: 0 10px;
 }
 
 .img img {
-    max-width: 300px;
-    border-radius: 50%;
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.container .infos {
+  max-width: 600px;
+}
+
+.container .infos h1 {
+  font-family: "Roboto", sans-serif;
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #393939;
+}
+
+.container .infos h1 .firs-name {
+  color: #794dd6;
+}
+
+.container .infos h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #767879;
+  font-weight: 500;
+}
+
+.container .infos h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 430;
+  color: #767879;
+}
+
+.container .infos h2 span {
+  color: #794dd6;
+}
+
+
+.container .infos .redes {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.container .infos .redes img {
+    max-width: 32px;
+    cursor: pointer;
 }
