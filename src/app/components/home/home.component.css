@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    gap: 50px;
+}
+
+.img img {
+    max-width: 300px;
+    border-radius: 50%;
+}
