@@ -7,9 +7,10 @@ import { HomeComponent } from './components/home/home.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SkillsComponent],
+  declarations: [AppComponent, HomeComponent, SkillsComponent, ProjectsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
