@@ -1,63 +1,107 @@
 .container {
-    display: flex;
+  display: flex;
 }
 
 .container .header {
-    background-color: #794DD6;
-    min-height: 100vh;
-    width: 100%;
-    max-width: 110px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
+  background-color: #794dd6;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
 }
 
 .header .initials {
-    background-color: #6E46C1;
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
+  background-color: #6e46c1;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
 }
 
 .header .initials span {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 45px;
-    color: white;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 45px;
+  color: white;
 }
 
 .header .initials span:last-of-type {
-    margin-left: 3px;;
+  margin-left: 3px;
 }
 
 .header nav {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header nav a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header nav a .icon {
+  color: white;
+  margin-bottom: 3px;
+}
+
+.header nav a p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #e4dede;
+}
+
+.container .cont-princ {
+  flex: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .container .header {
+    background-color: #794dd6;
+    min-height: 80px;
+    max-height: 80px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+  .header .initials {
+    background-color: #6e46c1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    max-width: 20%;
+    padding: 0;
+  }
+
+  .header .initials span {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 45px;
+    color: white;
+  }
+
+  .header .initials span:last-of-type {
+    margin-left: 3px;
+  }
+
+  .header nav {
     display: flex;
     gap: 30px;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-}
-
-.header nav a {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header nav a .icon {
-    color: white;
-    margin-bottom: 3px;
-}
-
-.header nav a p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    color: #e4dede;
-}
-
-.container .cont-princ {
-    flex: 1;
+  }
 }
