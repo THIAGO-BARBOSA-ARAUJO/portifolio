@@ -1,5 +1,5 @@
 <main>
-  <h1>Skills</h1>
+  <h1 [ngStyle]="{ 'text-decoration': 'underline' }">Skills</h1>
   <ul>
     <li *ngFor="let skill of skills">
       <img [src]="skill" alt="skill.png" />
