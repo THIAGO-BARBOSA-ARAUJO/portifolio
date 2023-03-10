@@ -7,7 +7,15 @@ main {
     justify-content: center;
 }
 
-main
+main h1 {
+    margin: 20px 0;
+    align-self: flex-start;
+    margin-left: 30px;
+    font-size: 25px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 600;
+    color: #595959;
+}
 
 
 ul {
