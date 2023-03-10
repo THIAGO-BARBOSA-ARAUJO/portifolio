@@ -1,1 +1,8 @@
-<p>Página de Skills</p>
+<main>
+  <h1>Skills</h1>
+  <ul>
+    <li *ngFor="let skill of skills">
+      <img [src]="skill" alt="skill.png" />
+    </li>
+  </ul>
+</main>
