@@ -1,0 +1,41 @@
+<main>
+  <div class="container-contacts">
+    <h1>Me envie um E-mail</h1>
+
+    <form (ngSubmit)="submit($event)" [formGroup]="momentForm" #formDir="ngForm">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" placeholder="coloque o seu Email" formControlName="email" name="email" required />
+            <div *ngIf="email.invalid && formDir.submitted" class="validation-error">
+            <p *ngIf="email.errors?.['required']">O e-mail é obrigatório</p>
+            </div>
+        </div>
+        
+
+         <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" placeholder="coloque o seu Nome" formControlName="name" name="from_name" required />
+            <div *ngIf="name.invalid && formDir.submitted" class="validation-error">
+            <p *ngIf="name.errors?.['required']">O Nome é obrigatório</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+        <label for="title">Título:</label>
+        <input type="text" placeholder="coloque um titulo" formControlName="title" name="from_titulo" required />
+        <div *ngIf="title.invalid && formDir.submitted" class="validation-error">
+            <p *ngIf="title.errors?.['required']">O título é obrigatório</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Mensagem:</label>
+        <textarea name="message" placeholder="digite sua mensagem!" formControlName="message" required></textarea>
+        <div *ngIf="message.invalid && formDir.submitted" class="validation-error">
+            <p *ngIf="message.errors?.['required']">Amensagem é obrigatório</p>
+        </div>
+      </div>
+      <p *ngIf="send_email_sucess" class="send_email_sucess">Email enviado com sucesso!</p>
+      <input type="submit" value="Enviar" />
+    </form>
+  </div>
+</main>
