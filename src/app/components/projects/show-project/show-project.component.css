@@ -1,0 +1,63 @@
+.container {
+  margin-top: 40px;
+}
+
+.container h2 {
+  color: #595959;
+  font-family: "Noto sans";
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.container p {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  line-height: 1.3em;
+  color: #202020;
+}
+
+.container a {
+  text-decoration: none;
+  color: #595959;
+}
+
+.container span {
+  color: #794dd6;
+  font-weight: 500;
+}
+
+.container-image {
+  margin-top: 30px;
+}
+
+.container-image .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.container-image .images img {
+  max-width: 40%;
+  cursor: pointer;
+  background-color: #794dd6;
+}
+
+.image-special {
+    width: 20%;
+    
+}
+
+@media screen and (max-width: 500px) {
+  .container-image {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    padding-top: 80px;
+  }
+}

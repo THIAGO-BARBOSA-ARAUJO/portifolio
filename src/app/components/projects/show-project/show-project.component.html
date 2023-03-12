@@ -1,0 +1,165 @@
+<div class="container">
+  <div *ngIf="prop === 'project1'">
+    <h2>Diven.t</h2>
+    <p>
+      O Driven.t foi feito para ser um site de venda de ingressos de todos os
+      tipos, como por exemplo ingresso para eventos, sinemas e etc. Nele você
+      pode fazer a reserva do seu ingresso para depois fazer a compra
+      efetivamente, pode também escolher um hotel caso o ingresso escolhido
+      tenha essa modalidade e por fim pode garantir seu lugar em qualquer
+      palestra do evento.
+    </p>
+    <h2>Como foi feito ?</h2>
+    <p>
+      Esse é um projeto Full Stack. No front foi utilizadas as tecnologias
+      <span>HTML5</span>, <span>CSS3</span>, <span>ReactJS</span>,
+      <span>StyledComponents</span>, <span>react-icons</span> para fazer a
+      inserção de icones na página, <span>React-rout-Dom</span> para fazer o
+      roteamento do site, <span>axios</span> para lidar com requisições feitas
+      ao nosso back-end, <span>dayjs</span> para lidar com as datas do site e
+      etc..
+    </p>
+    <p>
+      O back-end foi escrito com <span>TypeScript</span> e foi utilizado o
+      <span>bcrypt</span> para encriptar a senha do usuário no banco de dados,
+      utilizamos <span>express</span> para subir o servidor e lidar com as rotas
+      da nossa aplicação, <span>dotenv</span> para guardar as chaves secretas
+      que não serão publicadas no github, foi usado o <span>joi</span> também
+      para fazer a validação em tempo de execução das informações do usuário
+      vindas do front, <span>jsonwebtoken</span> para gerar o token do usuário
+      para que ele permanecesse logado no front e que conseguissemos autenticalo
+      sem que ele precisasse ficar enviando email e senha toda hora, e etc..
+    </p>
+    <p>
+      No banco de dados optamos por utilizar o <span>postgres</span> para
+      armazenar as informações do usuário, utilizamos o <span>redis</span> para
+      que nossa aplicação tivesse uma scalabilidade maior também.
+    </p>
+    <p>
+      Nesse projeto foram feitos testes de integração para garantirmos que nossa
+      api estivesse funcionando corretamente e para isso utilizamos a biblioteca
+      <span>jest</span>.
+    </p>
+
+    <h2 [ngStyle]="{ 'margin-top': '20px' }">
+      <a
+        target="_blank"
+        href="https://github.com/orgs/TTTN-drivent/repositories"
+        >GitHub do Projeto</a
+      >
+    </h2>
+
+    <div class="container-image">
+      <h2>Imagens</h2>
+
+      <div class="images">
+        <img [src]="images_drivent[0]" alt="drivent.png" />
+        <img [src]="images_drivent[1]" alt="drivent.png" />
+        <img [src]="images_drivent[2]" alt="drivent.png" />
+        <img [src]="images_drivent[3]" alt="drivent.png" />
+        <img [src]="images_drivent[4]" alt="drivent.png" />
+        <img [src]="images_drivent[5]" alt="drivent.png" />
+      </div>
+    </div>
+  </div>
+  <div *ngIf="prop === 'project2'">
+    <h2>Shortly</h2>
+    <p>
+      O shortly é um site voltado para para fazer um encurtador de url, para
+      pessoas que estão com uma url grande poder encurtar sua url, funciona
+      assim o usuário insere a url que quer encurtar o site pega essa url
+      armazena e devolve uma url menor, sempre que o usuário digita a url no
+      navegador que foi recebida ele acessa o site do shortly que é
+      redirecionado para o site com o qual ele inseriu a url.
+    </p>
+    <h2>Como foi feito ?</h2>
+    <p>
+      Esse é um projeto Full Stack. No front foi utilizadas as tecnologias
+      <span>HTML5</span>, <span>CSS3</span>, <span>ReactJS</span>,
+      <span>StyledComponents</span>, <span>react-icons</span> para fazer a
+      inserção de icones na página, <span>React-rout-Dom</span> para fazer o
+      roteamento do site, <span>axios</span> para lidar com requisições feitas
+      ao nosso back-end, e etc..
+    </p>
+    <p>
+      O back-end foi escrito com <span>JavaScript</span> e foi utilizado o
+      <span>bcrypt</span> para encriptar a senha do usuário no banco de dados,
+      utilizamos <span>express</span> para subir o servidor e lidar com as rotas
+      da nossa aplicação, <span>dotenv</span> para guardar as chaves secretas
+      que não serão publicadas no github, foi usado o <span>joi</span> também
+      para fazer a validação em tempo de execução das informações do usuário
+      vindas do front, <span>uuid</span> para gerar o token do usuário para que
+      ele permanecesse logado no front e que conseguissemos autenticalo sem que
+      ele precisasse ficar enviando email e senha toda hora e utilizei a
+      biblioteca <span>pg</span> para fazer a conexão com o banco de dados.
+    </p>
+    <h2 [ngStyle]="{ 'margin-top': '20px' }">
+      <a
+        target="_blank"
+        href="https://github.com/THIAGO-BARBOSA-ARAUJO/projeto16-shortly-front"
+        >Front-End do projeto</a
+      >
+    </h2>
+
+    <h2 [ngStyle]="{ 'margin-top': '20px' }">
+      <a
+        target="_blank"
+        href="https://github.com/THIAGO-BARBOSA-ARAUJO/projeto16-shortly"
+        >Back-End do projeto</a
+      >
+    </h2>
+
+    <div class="container-image">
+      <h2>Imagens</h2>
+
+      <div class="images">
+        <img [src]="images_shortly[0]" alt="shortly.png" />
+        <img [src]="images_shortly[1]" alt="shortly.png" />
+        <img [src]="images_shortly[2]" alt="shortly.png" />
+        <img [src]="images_shortly[3]" alt="shortly.png" />
+      </div>
+    </div>
+  </div>
+  <div *ngIf="prop === 'project3'">
+    <h2>Cineflex</h2>
+    <p>
+      O cineflex foi desenvolvido com o pensamento de criar um site para venda
+      de ingressos, ao contrário do Drivent ele é exclusivo para ingressos de
+      cinema, onde o cliente pode escolher o filme, escolher um horário, por
+      último escolher um assento disponível e feito isso é só digitar seu nome e
+      cpf e comprar seu ingresso. há vale lembrar que o usuário pode escolher
+      mais de um assento com o mesmo cpf.
+    </p>
+
+    <h2>Como foi feito ?</h2>
+
+    <p>
+      Esse é um projeto Front-End, e foi utilizadas as tecnologias
+      <span>HTML5</span>, <span>CSS3</span>, <span>ReactJS</span>,
+      <span>React-rout-Dom</span> para fazer o roteamento do site,
+      <span>axios</span> para lidar com requisições feitas ao nosso back-end, e
+      foi utilizado também a biblioteca <span>animate.css</span> para fazer as
+      animações do site.
+    </p>
+    <h2 [ngStyle]="{ 'margin-top': '20px' }">
+      <a
+        target="_blank"
+        href="https://github.com/THIAGO-BARBOSA-ARAUJO/projeto9-cineflex"
+        >GitHub do Projeto</a
+      >
+    </h2>
+
+    <div class="container-image">
+      <h2>Imagens</h2>
+
+      <div class="images">
+        <img class="image-special" [src]="images_cineflex[0]" alt="shortly.png" />
+        <img class="image-special" [src]="images_cineflex[1]" alt="shortly.png" />
+        <img class="image-special" [src]="images_cineflex[2]" alt="shortly.png" />
+        <img class="image-special" [src]="images_cineflex[3]" alt="shortly.png" />
+        <img class="image-special" [src]="images_cineflex[4]" alt="shortly.png" />
+        <img class="image-special" [src]="images_cineflex[5]" alt="shortly.png" />
+      </div>
+    </div>
+  </div>
+</div>

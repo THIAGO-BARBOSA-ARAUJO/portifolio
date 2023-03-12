@@ -1,1 +1,25 @@
-<p>projects works!</p>
+<main>
+  <div class="container-main">
+    <h1>Projetos</h1>
+
+    <div class="container-group-button">
+      <mat-button-toggle-group
+        class="group-buttons"
+        (change)="changeInToggleGroup(cityGroup.value)"
+        #cityGroup="matButtonToggleGroup"
+      >
+        <mat-button-toggle class="toggle-button" value="project1"
+          >Driven.t</mat-button-toggle
+        >
+        <mat-button-toggle class="toggle-button" value="project2"
+          >Shortly</mat-button-toggle
+        >
+        <mat-button-toggle class="toggle-button" value="project3"
+          >Cineflex</mat-button-toggle
+        >
+      </mat-button-toggle-group>
+    </div>
+
+    <app-show-project [prop]="prop"></app-show-project>
+  </div>
+</main>
