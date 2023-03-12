@@ -1,0 +1,60 @@
+main {
+  min-height: 100vh;
+}
+
+.container-main {
+  padding: 20px;
+  height: 100%;
+}
+
+.container-main h1 {
+  font-family: "Noto Sans";
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #595959;
+  margin: 25px 0;
+  text-decoration: underline;
+}
+
+.group-buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 40%;
+  border: none;
+  margin-left: 2rem;
+}
+
+.toggle-button {
+  background-color: #794dd6;
+  border: none;
+  outline: none;
+  border-radius: 2em;
+  margin: 0 5px;
+  width: 120px;
+  font-family: "Roboto", "Helvetica Neue";
+}
+
+.toggle-button:hover {
+  background-color: #6e46c1;
+}
+
+@media screen and (max-width: 900px) {
+  .group-buttons {
+    max-width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container-group-button {
+    position: relative;
+  }
+
+  .group-buttons {
+    margin-left: 0;
+    position: absolute;
+    overflow-x: scroll;
+    padding: 10px 0;
+    border-radius: 2%;
+  }
+}
