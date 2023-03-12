@@ -11,6 +11,10 @@ import { ShowProjectComponent } from './components/projects/show-project/show-pr
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatButtonModule } from '@angular/material/button'; 
 import { MatIconModule } from '@angular/material/icon';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,7 @@ import { MatIconModule } from '@angular/material/icon';
     SkillsComponent,
     ProjectsComponent,
     ShowProjectComponent,
+    ContactsComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +32,10 @@ import { MatIconModule } from '@angular/material/icon';
     MatIconModule,
     MatButtonToggleModule,
     MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
