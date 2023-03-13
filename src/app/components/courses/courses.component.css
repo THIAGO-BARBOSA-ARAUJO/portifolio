@@ -36,17 +36,16 @@
 .container-courses ul {
   list-style: none;
   padding-left: 10px;
+  padding: 0 20px;
 }
 
 .container-courses ul li {
   padding: 5px 0;
+  font-family: 'Roboto', sans-serif;
+  list-style-type: circle;
 }
 
-.container-courses ul li:before {
-  content: "\2022";
-  margin: 0 4px;
-  color: #794DD6;
-}
+
 
 @media screen and (max-width: 500px) {
     .container-courses {
