@@ -55,6 +55,18 @@
   gap: 20px;
 }
 
+.container .infos .redes button {
+  background-color: #794dd6;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 15px;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  color: white;
+}
+
 .container .infos .redes img {
   max-width: 32px;
   cursor: pointer;
