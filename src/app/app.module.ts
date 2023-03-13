@@ -17,6 +17,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { AboutComponent } from './components/about/about.component';
 import { CoursesComponent } from './components/courses/courses.component';
+import { EvaluateComponent } from './components/home/evaluate/evaluate.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { CoursesComponent } from './components/courses/courses.component';
     ContactsComponent,
     AboutComponent,
     CoursesComponent,
+    EvaluateComponent,
   ],
   imports: [
     BrowserModule,

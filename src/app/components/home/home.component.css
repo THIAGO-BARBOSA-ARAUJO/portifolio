@@ -13,6 +13,31 @@
   border-radius: 50%;
 }
 
+.img_perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img_perfil .img {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.img_perfil .classification {
+  max-width: 250px;
+  width: 100%;
+}
+
+.img_perfil .classification .classi {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #794dd6;
+}
+
 .container .infos {
   max-width: 600px;
 }
@@ -99,5 +124,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin-bottom: 60px;
   }
 }

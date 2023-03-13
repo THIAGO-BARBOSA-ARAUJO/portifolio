@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  stars: string = '';
+
   imagePerfil: string = '/assets/img/foto_perfil.jpeg';
   imageGithub: string = '/assets/img/github.png';
   imageLinkedin: string = '/assets/img/linkedin.png';
@@ -15,5 +17,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  onChangeStar(value: string) {
+    this.stars = value;
+  }
 }

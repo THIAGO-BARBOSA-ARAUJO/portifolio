@@ -1,0 +1,47 @@
+
+.evaluate {
+    margin-top: 20px;
+}
+
+form h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #767879;
+    margin-bottom: 5px;
+}
+
+.form-fild {
+    max-width: 65px;
+}
+
+input[type="number"] {
+    color: #6E46C1;
+}
+
+input[type="number"]::placeholder {
+    color: #764DD6;
+}
+
+.label {
+    color: #764DD6;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+form button {
+    margin-left: 30px;
+    padding: 10px;
+    min-width: 100px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #6E46C1;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+form button:hover {
+    background-color: #764DD6;
+}
