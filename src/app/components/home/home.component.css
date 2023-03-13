@@ -97,7 +97,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 465px) {
   .container {
     display: flex;
     flex-direction: column;
