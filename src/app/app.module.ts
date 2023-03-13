@@ -16,6 +16,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { AboutComponent } from './components/about/about.component';
+import { CoursesComponent } from './components/courses/courses.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { AboutComponent } from './components/about/about.component';
     ShowProjectComponent,
     ContactsComponent,
     AboutComponent,
+    CoursesComponent,
   ],
   imports: [
     BrowserModule,

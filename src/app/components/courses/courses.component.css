@@ -1,0 +1,55 @@
+.container-courses {
+  padding: 20px;
+}
+
+.container-courses h1 {
+  color: #595959;
+  font-family: "Noto sans";
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-top: 40px;
+}
+
+.container-courses h2 {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: underline;
+  margin-top: 1.6em;
+  margin-bottom: 1em;
+  font-weight: 500;
+  color: #595959;
+}
+
+.course-conclusion {
+  padding: 10px 0;
+}
+
+.course-conclusion span {
+  margin-right: 10px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  color: #4a4444;
+}
+
+.container-courses ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.container-courses ul li {
+  padding: 5px 0;
+}
+
+.container-courses ul li:before {
+  content: "\2022";
+  margin: 0 4px;
+  color: #794DD6;
+}
+
+@media screen and (max-width: 500px) {
+    .container-courses {
+        margin-bottom: 80px;
+    }
+}
