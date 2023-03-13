@@ -1,0 +1,43 @@
+.container-about {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.container-about h1 {
+  color: #595959;
+  font-family: "Noto sans";
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  margin-top: 40px;
+}
+
+.container-about h2 {
+  color: #595959;
+  font-family: "Noto sans";
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.container-about h3 {
+  color: #595959;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.container-about p {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  line-height: 1.3em;
+  color: #585b5c;
+  line-height: 25px;
+}
+
+.container-about p span {
+    font-weight: 600;
+}
