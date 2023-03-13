@@ -1,6 +1,7 @@
 .container-about {
   max-width: 950px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .container-about h1 {
@@ -40,4 +41,10 @@
 
 .container-about p span {
     font-weight: 600;
+}
+
+@media screen and (max-width: 555px) {
+  .container-about {
+    margin-bottom: 90px;
+  }
 }
