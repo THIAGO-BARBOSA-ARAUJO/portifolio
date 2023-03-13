@@ -3,8 +3,8 @@
     <h3>Deixe um nota para o meu perfil:</h3>
     <mat-form-field class="form-fild" appearance="standard">
     <mat-label class="label">Nota</mat-label>
-    <input type="number" min="0" max="5" matInput placeholder="0 - 5">
+    <input (change)="getInputStar(star.value)" #star type="number" min="0" max="5" matInput placeholder="0 - 5">
   </mat-form-field>
-  <button>Dar Nota!</button>
+  <button (click)="handleClick()">Dar Nota!</button>
 </form>
 </div>
