@@ -1,86 +1,93 @@
+.container-main {
+  flex: 1;
+  min-height: 100vh;
+  min-width: 80vw;
+  margin-bottom: 50px;
+  justify-self: center;
+}
 
 .container-contacts h1 {
-    font-family: 'Noto Sans';
-    font-size: 25px;
-    margin-top: 20px;
-    margin-left: 20px;
-    font-weight: 500;
-    color: #595959;
-    text-decoration: underline;
+  font-family: "Noto Sans";
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: 500;
+  color: #595959;
+  text-decoration: underline;
 }
 
 form {
-    max-width: 450px;
-    margin: 0 auto;
-    padding: 0 10px;
-    margin-top: 40px;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-top: 40px;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
-    margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  margin-bottom: 40px;
 }
 
 .form-group label {
-    font-family: bold;
-    font-size: .9em;
-    margin-bottom: .4em;
+  font-family: bold;
+  font-size: 0.9em;
+  margin-bottom: 0.4em;
 }
 
 .form-group input {
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #595959;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #595959;
 }
 
-.form-group input, .form-group textarea {
-    padding: 0.6em;
-    color: #777;
-    font-size: 0.8em;
-    outline: none;
+.form-group input,
+.form-group textarea {
+  padding: 0.6em;
+  color: #777;
+  font-size: 0.8em;
+  outline: none;
 }
 
 .form-group textarea {
-    min-height: 100px;
-    resize: none;
+  min-height: 100px;
+  resize: none;
 }
 
 input[type="submit"] {
-    background-color: #efefef;
-    border: 2px solid transparent;
-    padding: 0.6em 1em;
-    font-weight: bold;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: 0.4s;
+  background-color: #efefef;
+  border: 2px solid transparent;
+  padding: 0.6em 1em;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 input[type="submit"]:hover {
-    color: #794dd6;
-    border-color: #794dd6;
-    background-color: transparent;
+  color: #794dd6;
+  border-color: #794dd6;
+  background-color: transparent;
 }
 
 .validation-error {
-    margin-top: 10px;
-    font-size: 14px;
-    color: red;
-    font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
+  font-size: 14px;
+  color: red;
+  font-family: "Roboto", sans-serif;
 }
 
 .send_email_sucess {
-    margin-top: 10px;
-    font-size: 18px;
-    color: green;
-    font-family: 'Roboto', sans-serif;
-    padding-bottom: 20px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: green;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 20px;
 }
 
-
 @media screen and (max-width: 500px) {
-    .container-contacts {
-        margin-bottom: 80px;
-    }
+  .container-contacts {
+    margin-bottom: 80px;
+  }
 }

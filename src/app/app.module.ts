@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { AboutComponent } from './components/about/about.component';
 import { CoursesComponent } from './components/courses/courses.component';
 import { EvaluateComponent } from './components/home/evaluate/evaluate.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { EvaluateComponent } from './components/home/evaluate/evaluate.component
     AboutComponent,
     CoursesComponent,
     EvaluateComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +45,7 @@ import { EvaluateComponent } from './components/home/evaluate/evaluate.component
     ReactiveFormsModule,
     MatInputModule,
     MatFormFieldModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
