@@ -2,7 +2,7 @@
   margin-top: 40px;
 }
 
-.container h2 {
+.title {
   color: #595959;
   font-family: "Noto sans";
   font-size: 25px;
@@ -46,8 +46,7 @@
 }
 
 .image-special {
-    width: 20%;
-    
+  width: 20%;
 }
 
 @media screen and (max-width: 500px) {

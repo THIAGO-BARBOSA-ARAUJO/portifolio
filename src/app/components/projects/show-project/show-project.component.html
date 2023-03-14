@@ -1,6 +1,6 @@
 <div class="container">
   <div *ngIf="prop === 'project1'">
-    <h2>Diven.t</h2>
+    <h2 [ngClass]="title">Diven.t</h2>
     <p>
       O Driven.t foi feito para ser um site de venda de ingressos de todos os
       tipos, como por exemplo ingresso para eventos, sinemas e etc. Nele você
@@ -9,7 +9,7 @@
       tenha essa modalidade e por fim pode garantir seu lugar em qualquer
       palestra do evento.
     </p>
-    <h2>Como foi feito ?</h2>
+    <h2 [ngClass]="title">Como foi feito ?</h2>
     <p>
       Esse é um projeto Full Stack. No front foi utilizadas as tecnologias
       <span>HTML5</span>, <span>CSS3</span>, <span>ReactJS</span>,
@@ -41,7 +41,7 @@
       <span>jest</span>.
     </p>
 
-    <h2 [ngStyle]="{ 'margin-top': '20px' }">
+    <h2 [ngClass]="title" [ngStyle]="{ 'margin-top': '20px' }">
       <a
         target="_blank"
         href="https://github.com/orgs/TTTN-drivent/repositories"
@@ -50,7 +50,7 @@
     </h2>
 
     <div class="container-image">
-      <h2>Imagens</h2>
+      <h2 [ngClass]="title">Imagens</h2>
 
       <div class="images">
         <img [src]="images_drivent[0]" alt="drivent.png" />
@@ -63,7 +63,7 @@
     </div>
   </div>
   <div *ngIf="prop === 'project2'">
-    <h2>Shortly</h2>
+    <h2 [ngClass]="title">Shortly</h2>
     <p>
       O shortly é um site voltado para para fazer um encurtador de url, para
       pessoas que estão com uma url grande poder encurtar sua url, funciona
@@ -72,7 +72,7 @@
       navegador que foi recebida ele acessa o site do shortly que é
       redirecionado para o site com o qual ele inseriu a url.
     </p>
-    <h2>Como foi feito ?</h2>
+    <h2 [ngClass]="title">Como foi feito ?</h2>
     <p>
       Esse é um projeto Full Stack. No front foi utilizadas as tecnologias
       <span>HTML5</span>, <span>CSS3</span>, <span>ReactJS</span>,
@@ -93,7 +93,7 @@
       ele precisasse ficar enviando email e senha toda hora e utilizei a
       biblioteca <span>pg</span> para fazer a conexão com o banco de dados.
     </p>
-    <h2 [ngStyle]="{ 'margin-top': '20px' }">
+    <h2 [ngClass]="title" [ngStyle]="{ 'margin-top': '20px' }">
       <a
         target="_blank"
         href="https://github.com/THIAGO-BARBOSA-ARAUJO/projeto16-shortly-front"
@@ -101,7 +101,7 @@
       >
     </h2>
 
-    <h2 [ngStyle]="{ 'margin-top': '20px' }">
+    <h2 [ngClass]="title" [ngStyle]="{ 'margin-top': '20px' }">
       <a
         target="_blank"
         href="https://github.com/THIAGO-BARBOSA-ARAUJO/projeto16-shortly"
@@ -110,7 +110,7 @@
     </h2>
 
     <div class="container-image">
-      <h2>Imagens</h2>
+      <h2 [ngClass]="title">Imagens</h2>
 
       <div class="images">
         <img [src]="images_shortly[0]" alt="shortly.png" />
@@ -121,7 +121,7 @@
     </div>
   </div>
   <div *ngIf="prop === 'project3'">
-    <h2>Cineflex</h2>
+    <h2 [ngClass]="title">Cineflex</h2>
     <p>
       O cineflex foi desenvolvido com o pensamento de criar um site para venda
       de ingressos, ao contrário do Drivent ele é exclusivo para ingressos de
@@ -131,7 +131,7 @@
       mais de um assento com o mesmo cpf.
     </p>
 
-    <h2>Como foi feito ?</h2>
+    <h2 [ngClass]="title">Como foi feito ?</h2>
 
     <p>
       Esse é um projeto Front-End, e foi utilizadas as tecnologias
@@ -141,7 +141,7 @@
       foi utilizado também a biblioteca <span>animate.css</span> para fazer as
       animações do site.
     </p>
-    <h2 [ngStyle]="{ 'margin-top': '20px' }">
+    <h2 [ngClass]="title" [ngStyle]="{ 'margin-top': '20px' }">
       <a
         target="_blank"
         href="https://github.com/THIAGO-BARBOSA-ARAUJO/projeto9-cineflex"
@@ -150,7 +150,7 @@
     </h2>
 
     <div class="container-image">
-      <h2>Imagens</h2>
+      <h2 [ngClass]="title">Imagens</h2>
 
       <div class="images">
         <img class="image-special" [src]="images_cineflex[0]" alt="shortly.png" />

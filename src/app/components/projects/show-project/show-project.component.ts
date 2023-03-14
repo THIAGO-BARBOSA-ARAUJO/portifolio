@@ -12,6 +12,8 @@ export class ShowProjectComponent implements OnInit {
 
   @Input() prop: string = '';
 
+  title: string[] = ["title"]
+
   images_drivent: string[] = [
     '/assets/img/projetos/drivent/drivent1.png',
     '/assets/img/projetos/drivent/drivent2.png',
