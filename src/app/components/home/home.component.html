@@ -1,48 +1,59 @@
-<div class="container">
+<main>
+  <div class="container">
     <div class="img_perfil">
-        <div class="img"><img [src]="imagePerfil"></div>
-        <div class="classification">
-            <div *ngIf="stars === '1'" class="classi">
-                <mat-icon>star</mat-icon>
-            </div>
-            <div *ngIf="stars === '2'" class="classi">
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-            </div>
-            <div *ngIf="stars === '3'" class="classi">
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-            </div>
-            <div *ngIf="stars === '4'" class="classi">
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-            </div>
-            <div *ngIf="stars === '5'" class="classi">
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-                <mat-icon>star</mat-icon>
-            </div>
+      <div class="img"><img [src]="imagePerfil" /></div>
+      <div class="classification">
+        <div *ngIf="stars === '1'" class="classi">
+          <mat-icon>star</mat-icon>
         </div>
+        <div *ngIf="stars === '2'" class="classi">
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+        </div>
+        <div *ngIf="stars === '3'" class="classi">
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+        </div>
+        <div *ngIf="stars === '4'" class="classi">
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+        </div>
+        <div *ngIf="stars === '5'" class="classi">
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+        </div>
+      </div>
     </div>
     <div class="infos">
-        <h3>Olá! Eu me chamo</h3>
-        <h1><span class="firs-name">Thiago</span> Araujo</h1>
-        <h2>Sou <span>desenvolvedor Full Stack</span> apaixonado por criar applicativos para a Web!</h2>
-        <div class="redes">
-            <button routerLink="/about">Resumo</button>
-            <div class="linkedin">
-                <a target="_blank" href="https://www.linkedin.com/in/thiagobarbosaaraujo/"><img [src]="imageLinkedin" alt="linkedin.png"></a>
-            </div>
-            <div class="github">
-                <a target="_blank" href="https://github.com/THIAGO-BARBOSA-ARAUJO/"><img [src]="imageGithub" alt="github.png"></a>
-            </div>
+      <h3>Olá! Eu me chamo</h3>
+      <h1><span class="firs-name">Thiago</span> Araujo</h1>
+      <h2>
+        Sou <span>desenvolvedor Full Stack</span> apaixonado por criar
+        applicativos para a Web!
+      </h2>
+      <div class="redes">
+        <button routerLink="/about">Resumo</button>
+        <div class="linkedin">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/thiagobarbosaaraujo/"
+            ><img [src]="imageLinkedin" alt="linkedin.png"
+          /></a>
         </div>
-        <app-evaluate (changeStar)="onChangeStar($event)"></app-evaluate>
+        <div class="github">
+          <a target="_blank" href="https://github.com/THIAGO-BARBOSA-ARAUJO/"
+            ><img [src]="imageGithub" alt="github.png"
+          /></a>
+        </div>
+      </div>
+      <app-evaluate (changeStar)="onChangeStar($event)"></app-evaluate>
     </div>
-</div>
-
+  </div>
+  <app-footer></app-footer>
+</main>

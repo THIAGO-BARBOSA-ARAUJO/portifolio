@@ -6,6 +6,7 @@
   background-color: #794dd6;
   min-height: 100vh;
   width: 100%;
+  min-width: 110px;
   max-width: 110px;
   display: flex;
   flex-direction: column;
@@ -115,7 +116,6 @@
     display: none;
   }
 }
-
 
 @media screen and (max-width: 400px) {
   .header nav {

@@ -1,8 +1,11 @@
 <main>
-  <h1 [ngStyle]="{ 'text-decoration': 'underline' }">Skills</h1>
-  <ul>
-    <li *ngFor="let skill of skills">
-      <img [src]="skill" alt="skill.png" />
-    </li>
-  </ul>
+  <div class="container-skills">
+    <h1 [ngStyle]="{ 'text-decoration': 'underline' }">Skills</h1>
+    <ul>
+      <li *ngFor="let skill of skills">
+        <img [src]="skill" alt="skill.png" />
+      </li>
+    </ul>
+  </div>
+  <app-footer></app-footer>
 </main>

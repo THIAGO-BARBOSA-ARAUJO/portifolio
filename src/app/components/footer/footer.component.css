@@ -1,0 +1,28 @@
+.container {
+  align-items: center;
+  min-height: 40px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: #794dd6;
+  padding: 0 10px;
+}
+
+.container p {
+    font-size: 14px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 556px) {
+  .container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+    gap: 10px;
+  }
+}
